@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Job Hunt</title>
+  </head>
+
+  <body onload="myFunction()" style="margin: 0;">
+    <div id="loader"></div>
+
+    <div style="display: none;" id="myDiv" class="animate-bottom">
+      <img src="logo.png" alt="logo" title="logo" />
+      <div id="nav">
+      <ul>
+        <li><a href="#">JobSeekers</a></li>
+        <li><a href="#">Employers</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="sign up/Form.html" target="_blank">Sign up</a></li>
+      </ul>
+    </div>
+    <div id="input">
+        <input placeholder="Search Jobs Here..." type="search" >
+        <button>Search</button>
+    </div>
+    <div class="info">
+    <h1>We Offer Jobs In Diffent Skills</h1>
+    <ol>
+        <li>Software Engeniring</li> <br/>
+        <li>web and mobile computing</li> <br/>
+        <li>Kubernetes</li> <br/>
+        <li>E-commerce</li> <br/>
+        <li>Data Science Management</li>
+    </ol>
+    <h1>We Offer Jobs In Diffrent Cities of Pakistan</h1>
+<div class="row">
+    <div class="column">
+      <img src="karachi.jpg" alt="karachi"/>
+    </div>
+    <div class="column">
+      <img src="islamababd.jpg" alt="islamabad"/>
+    </div>
+    <div class="column">
+      <img src="lahore.jpg" alt="lahore"/>
+    </div>
+  </div>
+  </div>
+  
+</div>
+    <script>
+      var myVar;
+
+      function myFunction() {
+        myVar = setTimeout(showPage, 9000.90);
+      }
+
+      function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("myDiv").style.display = "block";
+      }
+    </script>
+  </body>
+</html>

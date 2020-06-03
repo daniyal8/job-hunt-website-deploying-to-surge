@@ -1,0 +1,138 @@
+body {
+  font-family: 'Baloo Thambi 2', cursive;
+}
+ul {
+  list-style-type: none;
+  display: inline;
+  text-align: center;
+}
+li {
+  display: inline;
+}
+a {
+  text-decoration: none;
+  padding: 5px;
+  margin: 10px;
+  color: orange;
+}
+#nav {
+  position: relative;
+  left: 750px;
+  top: -120px;
+}
+a:hover {
+  background-color: black;
+  border-radius: 6px;
+}
+
+#input {
+  text-align: center;
+}
+input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  ;
+  border-bottom: 2px solid orange;
+  font-size: 25px;
+  color: black;
+  text-align: center;
+  background-image: url('search.svg');
+  background-repeat: no-repeat;
+}
+button {
+  background-image: linear-gradient(skyblue, coral);
+  color: white;
+  font-size: 20px;
+  padding: 5px 10px 5px 10px;
+}
+button:hover {
+  background-color: orange;
+  color: black;
+}
+button:focus {
+  outline: none;
+  border: none;
+}
+input:focus {
+  outline: none;
+}
+/* Center the loader */
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid orange;
+    border-radius: 50%;
+    border-top: 16px solid black;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Add animation to "page content" */
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+  
+  #myDiv {
+    display: none;
+  }
+  .info {
+    text-align: center;
+  }
+  img {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .text{
+    text-align: center;
+  }
