@@ -1,0 +1,20 @@
+name: Deploy Website
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: practice
+    steps: 
+      - uses: actions/checkout@v2    
+      - name: installing Node.js
+        uses: actions/setup-node@v2-beta
+        with:
+          node-version: 12
+      - name: installing-surge
+        run: npm install -g surge  
+      - name: run surge
+        run: surge ./ 
+job-hunt-website-deploying-to-surge_daniyal_sadiq.surge.sh --token ${{ secrets.BOOTCAMP_PRACTICE }}
+© 2020 GitHub, Inc.
