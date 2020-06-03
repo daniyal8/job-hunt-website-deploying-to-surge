@@ -15,6 +15,4 @@ jobs:
       - name: installing-surge
         run: npm install -g surge  
       - name: run surge
-        run: surge ./ 
-job-hunt-website-deploying-to-surge_daniyal_sadiq.surge.sh --token ${{ secrets.BOOTCAMP_PRACTICE }}
-© 2020 GitHub, Inc.
+        run: surge ./ job-hunt-website-deploying-to-surge_daniyal_sadiq.surge.sh --token ${{ secrets.BOOTCAMP_PRACTICE }}
